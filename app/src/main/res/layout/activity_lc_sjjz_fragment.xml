@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_titlebar_blue"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/icon_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="1号料槽"
+            android:drawableEnd="@drawable/lc_inverted_triangle"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 底部 bottombar -->
+
+    <RelativeLayout
+        android:id="@+id/rl_set_sjjz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_sjjz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="时间:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_sjjz_value"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_set_sjjz"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/lc_click_select_time"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+
+        </TextView>
+    </RelativeLayout>
+<RelativeLayout
+        android:id="@+id/rl_sjjz_pack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_set_sjjz"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/ctv_sjjz_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="是否批处理"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_sjjz_pack"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_save_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_blue_bg"
+            android:text="保存"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_read_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_blue_bg"
+            android:text="读取设备时间"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

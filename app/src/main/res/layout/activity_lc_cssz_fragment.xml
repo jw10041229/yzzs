@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_titlebar_blue"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_set"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingStart="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_scj_set"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:drawableEnd="@drawable/lc_inverted_triangle"
+            android:gravity="center"
+            android:text="1号料槽"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical"
+            android:text="其他"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center" >
+    </RelativeLayout>
+    <!-- 底部 bottombar -->
+
+    <RelativeLayout
+        android:id="@+id/rl_set_slb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/gray_light2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_slb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="水料等级:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_slb_value"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_set_slb"
+            android:layout_toLeftOf="@+id/ctv_slb_pack"
+            android:background="@null"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </TextView>
+
+        <CheckedTextView
+            android:id="@+id/ctv_slb_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignBaseline="@+id/tv_set_slb_value"
+            android:layout_alignBottom="@+id/tv_set_slb_value"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:checked="true"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="是否批处理"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_set_slb"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_save_slb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_blue_bg"
+            android:text="保存"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_read_slb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/light_blue_bg"
+            android:text="读取水料比"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_bottom_bar"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/gray_light2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_xll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="下料等级:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_xll_value"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/tv_set_xll"
+            android:layout_alignBottom="@+id/tv_set_xll"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_start_temp"
+            android:layout_toRightOf="@+id/tv_set_xll"
+            android:background="@null"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" />
+
+        <CheckedTextView
+            android:id="@+id/ctv_xll_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="是否批处理"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout4"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_save_xll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/light_blue_bg"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_read_xll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/light_blue_bg"
+            android:text="读取下料量"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_separstor_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/ll_bottom_bar0"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@color/gray_light" />
+
+    <View
+        android:id="@+id/view_separstor_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/ll_bottom_bar"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@color/gray_light" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_bottom_bar0"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/gray_light2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_cpdj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="触碰等级:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_cpdj_value"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_set_cpdj"
+            android:background="@null"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </TextView>
+
+        <CheckedTextView
+            android:id="@+id/ctv_cpdj_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="是否批处理"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout6"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_save_cpdj"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/light_blue_bg"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_read_cpdj"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/light_blue_bg"
+            android:text="读取触碰次数"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll_bottom_bar4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_save_cgq"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/light_blue_bg"
+        android:text="传感器"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_read_sb"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/light_blue_bg"
+        android:text="设备"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+</RelativeLayout>

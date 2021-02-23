@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 100:图列离下边的距离 -->
+    <integer-array name="chart_TextSize_array">
+        <item>20</item>
+        <item>30</item>
+        <item>18</item>
+        <item>40</item>
+        <item>80</item>
+    </integer-array>
+    <!-- 全控运行持续时间 -->
+    <string-array name="qk_ycsc_cxsj_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="flz_debug_wheel_string_item_array">
+        <item>打开入口门</item>
+        <item>关闭入口门</item>
+        <item>打开左通道</item>
+        <item>打开右通道</item>
+        <item>关闭旋转门</item>
+        <item>喷气驱赶</item>
+        <item>打开分离门</item>
+        <item>关闭分离门</item>
+        <item>喷墨一</item>
+        <item>喷墨二</item>
+        <item>称重调试</item>
+        <item>硬件设置</item>
+        <item>RFID调试</item>
+        <item>快速调试</item>
+        <item>RFID出栏</item>
+    </string-array>
+    <string-array name="flz_guzhang_zhuangtai_item_array">
+        <item>断电</item>
+        <item>断网</item>
+        <item>重量获取故障</item>
+        <item>入口门故障</item>
+        <item>旋转门故障</item>
+        <item>分离门故障</item>
+        <item>动物长时间不离开</item>
+        <item>平均体重异常</item>
+        <item>分栏体重异常</item>
+        <item>分栏体重长时间未更新</item>
+        <item>记录时间获取失败</item>
+        <item>记录获取失败</item>
+        <item>记录上传失败</item>
+    </string-array>
+    <string-array name="lc_guzhang_zhuangtai_item_array">
+        <item>断电</item>
+        <item>断网</item>
+    </string-array>
+    <string-array name="shebei_work_model_item_array">
+        <item>适应一期</item>
+        <item>适应二期</item>
+        <item>注册称重</item>
+        <item>体重分栏</item>
+        <item>体重百分比分栏</item>
+        <item>RFID分栏</item>
+        <item>最重体重出栏</item>
+        <item>最轻体重出栏</item>
+        <item>RFID出栏</item>
+        <item>调试模式</item>
+    </string-array>
+    <string-array name="shebei_zhuangtai_item_array">
+        <item>空闲,等待动物进入</item>
+        <item>读耳标,称重</item>
+        <item>等待动物离开</item>
+        <item>数据保存</item>
+    </string-array>
+    <string-array name="shebei_item_array">
+        <item>温度传感器</item>
+        <item>湿度传感器</item>
+        <item>氨气传感器</item>
+        <item>水压传感器</item>
+        <item>PH值传感器</item>
+        <item>风机</item>
+        <item>湿帘</item>
+        <item>上料</item>
+        <item>喷雾</item>
+        <item>水流</item>
+    </string-array>
+    <string-array name="hk_device_item_array">
+        <item>风机</item>
+        <item>湿帘</item>
+        <item>地暖</item>
+        <item>变频风机</item>
+        <item>加热器</item>
+        <item>天窗</item>
+        <item>卷帘</item>
+    </string-array>
+    <string-array name="lc_device_item_array">
+        <item>子料槽</item>
+    </string-array>
+    <string-array name="qk_device_item_array">
+        <item>上料</item>
+        <item>湿帘</item>
+        <item>喷雾</item>
+    </string-array>
+    <string-array name="hk_sensor_item_array_icon">
+        <item>温度</item>
+        <item>湿度</item>
+        <item>氨气</item>
+        <item>PH</item>
+        <item>电流检测板</item>
+    </string-array>
+    <string-array name="qk_sensor_item_array_icon">
+        <item>水压</item>
+        <item>水流</item>
+        <item>PH</item>
+    </string-array>
+
+    <integer-array name="chart_Margins_array">
+        <item>35</item>
+        <item>30</item>
+        <item>30</item>
+        <item>20</item>
+    </integer-array>
+
+    <!-- 传感器 -->
+    <string-array name="sensor_guzhang_array">
+        <item>关闭</item>
+        <item>正常</item>
+        <item>无法读取数据</item>
+        <item>读取到数据异常</item>
+    </string-array>
+
+    <!-- set 按钮的wheel内容：调试用户 -->
+    <string-array name="hk_set_item_array_debug">
+        <item>默认档位设置</item>
+        <item>版本信息</item>
+        <item>断电报警生效确认时间</item>
+        <item>地暖温度</item>
+        <item>蓝牙别名</item>
+        <item>机器ID</item>
+        <item>重启设备</item>
+        <item>IP/网关</item>
+        <item>报警器号码</item>
+        <item>MAC地址</item>
+        <item>指示灯版本</item>
+        <item>硬件版本</item>
+        <item>加热器温度</item>
+        <item>目标温度</item>
+        <item>风机轮训时间</item>
+        <item>加热器温度New</item>
+    </string-array>
+    <!-- set 按钮的wheel内容：普通用户 -->
+    <string-array name="hk_set_item_array_customer">
+        <item>默认档位设置</item>
+        <item>版本信息</item>
+        <item>断电报警生效确认时间</item>
+        <item>地暖温度</item>
+        <item>蓝牙别名</item>
+    </string-array>
+
+    <!-- set 按钮的wheel内容：普通用户 -->
+    <string-array name="flz_set_item_array_customer">
+        <item>版本信息</item>
+        <item>断电报警生效确认时间</item>
+        <item>蓝牙别名</item>
+    </string-array>
+    <!-- set 按钮的wheel内容：调试用户 -->
+    <string-array name="flz_set_item_array_debug">
+        <item>版本信息</item>
+        <item>断电报警生效确认时间</item>
+        <item>蓝牙别名</item>
+        <item>机器ID</item>
+        <item>重启设备</item>
+        <item>IP/网关</item>
+        <item>报警器号码</item>
+        <item>MAC地址</item>
+        <item>指示灯版本</item>
+    </string-array>
+    <!-- set 按钮的wheel内容：普通用户 -->
+    <string-array name="qk_set_item_array_customer">
+        <item>版本信息</item>
+        <item>断电报警生效确认时间</item>
+        <item>蓝牙别名</item>
+    </string-array>
+    <!-- set 按钮的wheel内容：调试用户 -->
+    <string-array name="qk_set_item_array_debug">
+        <item>版本信息</item>
+        <item>断电报警生效确认时间</item>
+        <item>蓝牙别名</item>
+        <item>机器ID</item>
+        <item>重启设备</item>
+        <item>IP/网关</item>
+        <item>报警器号码</item>
+        <item>MAC地址</item>
+        <item>指示灯版本</item>
+    </string-array>
+    <!-- set 按钮的wheel内容：传感器安装位置 -->
+    <string-array name="hk_sensor_item_array_location">
+        <item>室内空中</item>
+        <item>室内地面</item>
+        <item>室外空中</item>
+        <item>室外地面</item>
+        <item>水面</item>
+        <item>水底</item>
+    </string-array>
+    <!-- set 按钮的wheel内容：环控硬件版本 -->
+    <string-array name="hk_yj_version_item_array">
+        <item>网络版</item>
+        <item>移动版</item>
+    </string-array>
+    <!-- 手持机 set 按钮的wheel内容 -->
+    <string-array name="scj_set_item_array">
+        <item>耳标温度数据列表</item>
+        <item>切换显示信息</item>
+        <item>设置设备参数</item>
+        <item>耳标温度标定</item>
+
+
+    </string-array>
+    <!-- 手持机 set 按钮的wheel内容 -->
+    <string-array name="scj_set_item_array2">
+        <item>耳标温度数据列表</item>
+        <item>切换显示信息</item>
+    </string-array>
+    <string-array name="flz_channel_item_array">
+        <item>左通道</item>
+        <item>中间通道</item>
+        <item>右通道</item>
+    </string-array>
+    <string-array name="lc_function_set_array">
+        <item>清盘时间</item>
+        <item>时间校准</item>
+    </string-array>
+
+
+
+    <string-array name="cdz_scale_type_array">
+        <item>体重秤</item>
+        <item>料盘秤</item>
+    </string-array>
+    <string-array name="cdz_debug_wheel_string_item_array">
+        <item>打开入口门</item>
+        <item>关闭入口门</item>
+        <item>喷墨一</item>
+        <item>喷墨二</item>
+        <item>称重调试</item>
+        <item>RFID调试</item>
+        <item>快速调试</item>
+        <item>料槽时间</item>
+        <item>电机调试</item>
+    </string-array>
+
+
+    <string-array name="hk_cssz_bfb">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="hk_cssz_bpfj_bfb">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </string-array>
+</resources>

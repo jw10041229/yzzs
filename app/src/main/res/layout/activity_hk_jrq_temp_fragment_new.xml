@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:descendantFocusability="afterDescendants"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_titlebar_blue"
+            android:gravity="center_vertical" >
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="加热器开启温度"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/tv_jrq_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"
+                android:gravity="center"
+                android:text="1号加热器"
+                android:textColor="@color/light_blue"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:layout_marginBottom="0dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_jrq_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_temp_1"
+                android:layout_alignBottom="@+id/et_temp_1"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="目标温度"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/et_temp_1"
+                style="@style/NoborderEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="14sp"
+                android:hint="输入开启温度"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_jrq_text"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_jrq_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="开启偏移(负值):"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="—"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_start_temp_1"
+                style="@style/NoborderEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/et_close_temp_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/et_close_temp_2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="1号开启温差"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_jrq_colse_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_temp_1"
+                android:layout_alignBottom="@+id/et_temp_1"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="关闭偏移(正数):"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_close_temp_1"
+                style="@style/NoborderEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="1号关闭温差"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_jrq_text2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"
+                android:gravity="center"
+                android:text="2号加热器"
+                android:textColor="@color/light_blue"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_jrq_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="目标温度:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_temp_2"
+                style="@style/NoborderEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_jrq_2"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:hint="输入开启温度"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jrq_open_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="开启偏移(负数):"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="—"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_start_temp_2"
+                style="@style/NoborderEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/et_close_temp_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/et_close_temp_2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="2号开启温差"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/gray_light"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_jrq_colse_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/et_temp_1"
+                android:layout_alignBottom="@+id/et_temp_1"
+                android:layout_marginStart="10dp"
+                android:paddingStart="10dp"
+                android:text="关闭偏移(正数):"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_close_temp_2"
+                style="@style/NoborderEditText"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="2号关闭温差"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_read"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/light_blue_bg"
+                android:gravity="center"
+                android:text="读取"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/light_blue_bg"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

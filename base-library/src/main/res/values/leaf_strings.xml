@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="leaf_loading_text">正在加载...</string>
+    <string name="leaf_retry_text">重试</string>
+    <string name= "leaf_login_loading">正在登陆..</string>
+     <string name="press_again_exit">再按一次退出</string>
+     <string name="press_twice_exit">快速点击两次退出</string>
+     <string name="leaf_account_notNull">账户不能为空</string>
+     <string name="leaf_password_notNull">密码不能为空</string>
+     <string name="net_unconnection">当前无网络连接</string>
+    <!-- 上拉下拉 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_loading_success">加载完成</string>
+    <string name="xlistview_header_loading_fail">加载失败</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="filter_vcode">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="filter_vcode2">0123456789abcdefABCDEF</string>
+    <string name="filter_vcode3">0123456789</string>
+    <string name="app_name">养殖助手</string>
+    <string name="app_name_notemp">养殖助手-无温度</string>
+    <string name="actionbar_icontext">养殖助手</string>
+    <string name="ble_not_supported">您的设备不支持BLE</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">设备地址:</string>
+    <string name="label_state">状态:</string>
+    <string name="no_data">无连接</string>
+    <string name="connected">蓝牙已连接</string>
+    <string name="disconnected">蓝牙连接已断开</string>
+    <string name="net_disconnected">网络连接已断开</string>
+    <string name="title_devices">查找BLE设备</string>
+    <string name="error_bluetooth_not_supported">蓝牙不支持</string>
+    <string name="unknown_device">未知设备</string>
+    <string name="unknown_characteristic">未知特征</string>
+    <string name="unknown_service">未知服务</string>
+    <string name="connect_time_out">超时,请重试</string>
+    <!-- Menu items -->
+    <string name="menu_connect">连接</string>
+    <string name="menu_disconnect">断开</string>
+    <string name="menu_connected">已连接</string>
+    <string name="menu_disconnected">已断开</string>
+    <string name="menu_disconnecting">取消中</string>
+    <string name="menu_connecting">连接中</string>
+    <string name="menu_scan">搜索</string>
+    <string name="menu_stop">停止</string>
+    <!-- Spinner prompt -->
+    <string name="spin_duankou_prompt"> 请选择端口 </string>
+    <string name="spin_yongtu_prompt"> 请选择用途</string>
+    <string name="data_error">数据格式错误</string>
+    <string name="bluetooth_disconnected">蓝牙已断开</string>
+
+    <!-- 分栏站 -->
+    <string name="flz_state_pause">暂停</string>
+    <string name="flz_state_run">恢复</string>
+    <!-- 料槽 -->
+    <string name="lc_click_select_time">点击选择当前时间</string>
+    <!-- 测定站-->
+    <string name="cdz_debug_motor">电机调试</string>
+    <string name="cdz_debug_motor_roll">正转调试</string>
+    <string name="cdz_debug_motor_rollback">反转调试</string>
+
+
+    <string name="state_network_error">网络错误</string>
+    <string name="state_loading">正在加载…</string>
+    <string name="state_not_more">没有更多数据</string>
+    <string name="state_load_error">加载失败</string>
+    <string name="state_refreshing">正在刷新</string>
+    <string name="state_loading_error">数据加载中&#8230;</string>
+    <string name="state_submit">正在提交中&#8230;</string>
+</resources>

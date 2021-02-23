@@ -1,0 +1,276 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- widget样式 -->
+    <style name="Basic.Widget" parent="@style/Basic">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+
+    <style name="Basic.Widget.ActionBar.TabStyle" parent="android:Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/b_selector_tab_bg</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="Basic.Widget.ActionBar.TabBarStyle" parent="android:Widget.Holo.ActionBar.TabBar">
+
+        <!-- <item name="android:divider">?android:attr/actionBarDivider</item> -->
+        <!-- <item name="android:divider">@null</item> -->
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerPadding">12dip</item>
+    </style>
+
+    <style name="Basic.Widget.ActionBar.TabText" parent="android:Widget.Holo.ActionBar.TabText">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/b_selector_tabtext</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="Basic.Widget.ActionBar.MenuTextStyle" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#017AFF</item>
+        <item name="android:textStyle">normal</item>
+        <!-- <item name="android:textAllCaps">true</item> -->
+    </style>
+
+    <style name="Basic.Widget.WindowTitleStyle" parent="@style/Basic.Widget">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <!-- <item name="android:maxWidth">161.0dip</item> -->
+
+        <item name="android:singleLine">true</item>
+        <!-- <item name="android:shadowColor">#4c000000</item> -->
+        <!-- <item name="android:shadowDx">1.2</item> -->
+        <!-- <item name="android:shadowDy">1.2</item> -->
+        <item name="android:shadowRadius">1.2</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:marqueeRepeatLimit">0</item>
+    </style>
+
+    <!-- 默认actionbar为显示返回的并且显示标题,图标部分用logo -->
+    <style name="Basic.Widget.ActionBarStyle" parent="android:Widget.Holo.ActionBar.Solid">
+        <item name="android:displayOptions">homeAsUp|useLogo|showHome|showTitle</item>
+        <item name="displayOptions">homeAsUp|useLogo|showHome|showTitle</item>
+        <item name="android:background">#f3f3f3</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:height">@dimen/b_header_height</item>
+        <!-- <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Title</item> -->
+        <!-- <item name="android:subtitleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle</item> -->
+        <item name="android:divider">?android:attr/dividerVertical</item>
+        <item name="android:progressBarStyle">@android:style/Widget.Holo.Light.ProgressBar.Horizontal</item>
+        <item name="android:indeterminateProgressStyle">@android:style/Widget.Holo.Light.ProgressBar</item>
+        <item name="android:progressBarPadding">32dip</item>
+        <!-- <item name="android:itemPadding">8dip</item> -->
+    </style>
+
+    <style name="Basic.Widget.ActionBarStyle.ShowCustom" parent="@style/Basic.Widget.ActionBarStyle">
+        <item name="android:displayOptions">showCustom</item>
+        <item name="displayOptions">showCustom</item>
+    </style>
+
+    <style name="Basic.Widget.FunctionBar" parent="@style/Basic.Widget">
+
+        <!-- <item name="android:background">@drawable/ic_function_bar_background</item> -->
+        <item name="android:paddingLeft">3.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60.0dip</item>
+    </style>
+
+    <style name="Basic.Widget.FunctionBarItem" parent="@style/Basic.Widget">
+        <item name="android:textAppearance">?android:textAppearanceMediumInverse</item>
+        <!-- <item name="android:textColor">?android:textColorPrimarIsalenverse</item> -->
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/b_btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="Basic.Widget.FunctionBarItem.Red" parent="@style/Basic.Widget.FunctionBarItem">
+        <item name="android:textColor">@color/b_btn_red</item>
+        <item name="android:background">@drawable/b_btn_red</item>
+    </style>
+
+    <style name="Basic.Widget.TabWidget" parent="@style/Basic.Widget">
+        <item name="android:textAppearance">@style/Basic.TextAppearance.Widget.TabWidget</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#4c000000</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowRadius">1.2</item>
+        <item name="android:tabStripEnabled">false</item>
+    </style>
+
+    <style name="Basic.Widget.AbsListView">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+    </style>
+
+    <style name="Basic.Widget.ListView" parent="Basic.Widget.AbsListView">
+        <item name="android:listSelector">@drawable/b_list_selector_background</item>
+        <!-- <item name="android:divider">@android:drawable/divider_horizontal_dark</item> -->
+        <!-- <item name="android:divider">@color/b_listview_divider_color</item> -->
+    </style>
+
+    <!-- 按钮样式start -->
+    <style name="Basic.Widget.Button" parent="Basic.Widget">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/b_btn_default</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/b_btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:minWidth">32dip</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="Basic.Widget.Button.List" parent="Basic.Widget.Button">
+        <item name="android:background">@drawable/b_btn_list_default</item>
+    </style>
+
+    <style name="Basic.Widget.Button.Green" parent="Basic.Widget.Button">
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="Basic.Widget.ButtonStyleSmall" parent="Basic.Widget.Button">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:minHeight">27dip</item>
+        <item name="android:minWidth">27dip</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <!-- 按钮样式 end -->
+
+
+    <!-- 进度条样式 start -->
+    <style name="Basic.Widget.ProgressBar" parent="@style/Basic.Widget">
+        <item name="android:maxWidth">28.0dip</item>
+        <item name="android:maxHeight">28.0dip</item>
+        <!-- 进度条的不确定性 -->
+        <item name="android:indeterminateOnly">true</item>
+         <!-- 进度条的对象 -->
+        <item name="android:indeterminateDrawable">@drawable/b_progress_medium_blue</item>
+         <!-- 进度条设置不精确显示进度的持续时间 -->
+        <item name="android:indeterminateDuration">3500</item>
+          <!--定义当进度达到最大时,不确定模式的表现 -->
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">28.0dip</item>
+        <item name="android:minHeight">28.0dip</item>
+    </style>
+
+    <style name="Basic.Widget.ProgressBar.Small" parent="Basic.Widget.ProgressBar">
+        <item name="android:maxWidth">17.0dip</item>
+        <item name="android:maxHeight">17.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/b_progress_small_blue</item>
+        <item name="android:minWidth">17.0dip</item>
+        <item name="android:minHeight">17.0dip</item>
+    </style>
+
+    <style name="Basic.Widget.ProgressBar.Large" parent="Basic.Widget.ProgressBar">
+        <item name="android:maxWidth">58.0dip</item>
+        <item name="android:maxHeight">58.0dip</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/b_progress_large_blue</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">58.0dip</item>
+        <item name="android:minHeight">58.0dip</item>
+    </style>
+
+    <style name="Basic.Widget.ProgressBar.Horizontal" parent="Basic.Widget.ProgressBar">
+        <item name="android:maxHeight">14.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/b_progress_horizontal</item>
+        <item name="android:minHeight">1.0dip</item>
+    </style>
+    <!-- 进度条样式 end -->
+
+
+    <!-- 文字样式 start -->
+    <style name="Basic.TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColorHighlight">#ffbfddf3</item>
+    </style>
+
+    <!-- <style name="Basic.TextAppearance.Big" parent="@style/Basic.TextAppearance"> -->
+    <!-- <item name="android:textSize">18.0sp</item> -->
+    <!-- <item name="android:textStyle">normal</item> -->
+    <!-- <item name="android:textColor">?android:textColorPrimary</item> -->
+    <!-- </style> -->
+
+    <style name="Basic.TextAppearance.Normal" parent="Basic.TextAppearance">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Small" parent="Basic.TextAppearance">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Medium" parent="Basic.TextAppearance">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Large" parent="Basic.TextAppearance">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Small.Inverse" parent="Basic.TextAppearance.Small">
+        <item name="android:textColor">?android:textColorSecondaryInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Medium.Inverse" parent="Basic.TextAppearance.Medium">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Large.Inverse" parent="Basic.TextAppearance.Large">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:textColorHint">?android:textColorHintInverse</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Small.Inverse.Shadow" parent="Basic.TextAppearance.Small.Inverse">
+        <item name="android:shadowColor">#4c000000</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Setting.Small" parent="Basic.TextAppearance.Small"></style>
+
+    <style name="Basic.TextAppearance.Widget" parent="Basic.TextAppearance" />
+
+    <style name="Basic.TextAppearance.Widget.TabWidget" parent="Basic.TextAppearance.Small.Inverse">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="Basic.TextAppearance.Widget.ButtonGroup" parent="Basic.TextAppearance.Small.Inverse.Shadow">
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <!-- 文字样式 end -->
+
+</resources>

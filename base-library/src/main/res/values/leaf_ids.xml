@@ -1,0 +1,8 @@
+<resources>
+
+    <item name="leaf_loading_view" type="id"/>
+    <item name="leaf_error_view" type="id"/>
+    <item name="leaf_progress_bar" type="id"/>
+    <item name="leaf_progress_text" type="id"/>
+
+</resources>

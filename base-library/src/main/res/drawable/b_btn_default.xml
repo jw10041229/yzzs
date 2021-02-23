@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item android:drawable="@drawable/b_ic_element_btn_white_normal" android:state_enabled="true" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/b_ic_element_btn_white_normal_disable" android:state_enabled="false" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/b_ic_element_btn_white_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/b_ic_element_btn_white_pressed" android:state_enabled="true" android:state_focused="true"/>
+    <item android:drawable="@drawable/b_ic_element_btn_white_normal" android:state_enabled="true"/>
+    <item android:drawable="@drawable/b_ic_element_btn_white_normal_disable" android:state_focused="true"/>
+    <item android:drawable="@drawable/b_ic_element_btn_white_normal_disable"/>
+    -->
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <solid android:color="#67BF67" />
+
+            <corners android:radius="4dp" />
+        </shape></item>
+    <item><shape android:shape="rectangle">
+            <stroke android:width="1px" android:color="#67BF67" />
+
+            <solid android:color="@android:color/transparent" />
+
+            <corners android:radius="4dp" />
+        </shape></item>
+
+</selector>

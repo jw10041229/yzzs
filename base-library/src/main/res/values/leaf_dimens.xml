@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- 圆角相关属性 -->
+    <dimen name="leaf_round_border_width">1dp</dimen>
+    <dimen name="leaf_round_radius_pressed">11dp</dimen>
+    <dimen name="leaf_round_radius">10dp</dimen>
+
+</resources>

@@ -1,0 +1,106 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Basic" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <!-- 总体样式 -->
+    <style name="Basic.Theme" parent="Basic">
+
+        <!-- 字体的总体颜色 -->
+        <item name="android:textColorPrimary">@color/black</item>
+<!--         <item name="android:textColorPrimaryInverse">@color/red</item> -->
+        <!-- <item name="android:textColorSecondary">@color/b_secondary_color</item> -->
+        <!-- <item name="android:textColorSecondaryInverse">@color/b_secondary_inverse_color</item> -->
+        <!-- <item name="android:textViewStyle">@style/Basic.TextAppearance.Normal</item> -->
+        <!-- <item name="android:textAppearance">@style/Basic.TextAppearance.Normal</item> -->
+        <item name="android:listPreferredItemHeight">44dp</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/b_btn_checkbox</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/b_btn_radio</item>
+        <!-- <item name="android:textAppearanceListItem">@style/Basic.TextAppearance.Normal</item> -->
+        <!-- 普通 -->
+         <item name="android:textAppearanceSmall">@style/Basic.TextAppearance.Small</item>
+         <item name="android:textAppearanceMedium">@style/Basic.TextAppearance.Medium</item>
+         <item name="android:textAppearanceLarge">@style/Basic.TextAppearance.Large</item>
+
+
+        <!-- 斜体 -->
+<!--         <item name="android:textAppearanceSmallInverse">@style/Basic.TextAppearance.Small.Inverse</item> -->
+<!--         <item name="android:textAppearanceMediumInverse">@style/Basic.TextAppearance.Medium.Inverse</item> -->
+<!--         <item name="android:textAppearanceLargeInverse">@style/Basic.TextAppearance.Large.Inverse</item> -->
+        <!-- 按钮 -->
+        <item name="android:buttonStyle">@style/Basic.Widget.Button</item>
+        <item name="android:buttonStyleSmall">@style/Basic.Widget.ButtonStyleSmall</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowBackground">@color/b_background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleSize">@dimen/b_header_height</item>
+        <item name="android:windowTitleStyle">@style/Basic.Widget.WindowTitleStyle</item>
+        <!-- <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item> -->
+        <item name="android:tabWidgetStyle">@style/Basic.Widget.TabWidget</item>
+        <!-- <item name="android:listViewStyle">@style/Basic.Widget.ListView</item> -->
+
+        <!-- 加载条的样式 -->
+       <item name="android:progressBarStyle">@style/Basic.Widget.ProgressBar</item>
+        <item name="android:progressBarStyleHorizontal">@style/Basic.Widget.ProgressBar.Horizontal</item>
+        <item name="android:progressBarStyleSmall">@style/Basic.Widget.ProgressBar.Small</item>
+        <item name="android:progressBarStyleLarge">@style/Basic.Widget.ProgressBar.Large</item>
+
+        <!-- actionbar 部分样式 -->
+        <item name="homeAsUpIndicator">@drawable/b_actionbar_back</item>
+        <item name="actionBarStyle">@style/Basic.Widget.ActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/Basic.Widget.ActionBarStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/b_actionbar_back</item>
+        <!-- menu的按钮文字样式 -->
+        <item name="actionMenuTextAppearance">@style/Basic.Widget.ActionBar.MenuTextStyle</item>
+        <item name="android:actionMenuTextAppearance">@style/Basic.Widget.ActionBar.MenuTextStyle</item>
+        <item name="selectableItemBackground">@drawable/b_selector_actionbar_btn</item>
+        <item name="android:selectableItemBackground">@drawable/b_selector_actionbar_btn</item>
+        <!--  -->
+        <item name="actionBarTabStyle">@style/Basic.Widget.ActionBar.TabStyle</item>
+        <item name="android:actionBarTabStyle">@style/Basic.Widget.ActionBar.TabStyle</item>
+        <item name="actionBarTabBarStyle">@style/Basic.Widget.ActionBar.TabBarStyle</item>
+        <item name="android:actionBarTabBarStyle">@style/Basic.Widget.ActionBar.TabBarStyle</item>
+        <item name="actionBarTabTextStyle">@style/Basic.Widget.ActionBar.TabText</item>
+        <item name="android:actionBarTabTextStyle">@style/Basic.Widget.ActionBar.TabText</item>
+        <!-- <item name="windowTitleBackground">@drawable/Isale_titlebar_background</item> -->
+        <!-- <item name="functionBarStyle">@style/Basic.Widget.FunctionBar</item> -->
+        <!-- <item name="functionBarItemStyle">@style/Basic.Widget.FunctionBarItem</item> -->
+        <!-- <item name="functionBarItemRedStyle">@style/Basic.Widget.FunctionBarItem.Red</item> -->
+        <!-- <item name="buttonStyleGreen">@style/Basic.Widget.Button.Green</item> -->
+        <!-- <item name="listButtonStyle">@style/Basic.Widget.Button.List</item> -->
+        <!-- <item name="contentAreaTopImage">@drawable/Isale_ic_element_content_top_background</item> -->
+        <!-- <item name="windowTitleButton">@drawable/Isale_title_btn</item> -->
+        <!-- <item name="popupMenuStyle">@style/Basic.Widget.PopupMenu</item> -->
+        <!-- <item name="buttonStyleRed">@style/Basic.Widget.Button.Red</item> -->
+        <!-- <item name="buttonStyleSub">@style/Basic.Widget.Button.Sub</item> -->
+
+        <!-- <item name="searchEditTextStyle">@style/Basic.Widget.EditText.Baidu.Search</item> -->
+        <!-- <item name="android:colorBackground">@color/b_background</item> -->
+        <item name="editTextStyle">@android:style/Widget.DeviceDefault.EditText</item>
+    </style>
+
+    <!-- 透明的样式 -->
+    <style name="Basic.Theme.Translucent" parent="@style/Basic.Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <!-- 没有头部的样式 -->
+    <style name="Basic.Theme.NoActionBar" parent="@style/Basic.Theme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <!-- 显示用户自定义头部的样式 -->
+    <style name="Basic.Theme.CustomerActionBar" parent="@style/Basic.Theme">
+        <item name="actionBarStyle">@style/Basic.Widget.ActionBarStyle.ShowCustom</item>
+        <item name="android:actionBarStyle">@style/Basic.Widget.ActionBarStyle.ShowCustom</item>
+    </style>
+
+</resources>

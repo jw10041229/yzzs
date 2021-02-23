@@ -1,0 +1,332 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <!-- 底部 bottombar -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cgqbdBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="传感器"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/hkbdBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="环控设备"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom_bar"
+        android:orientation="vertical" >
+
+        <!-- 标题栏 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_titlebar"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_back"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_set"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/set_icon"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="运行参数"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- 温度与档位显示 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/bg_main_top"
+            android:visibility="visible"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_temp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_temp_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="0℃"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_sys_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="半自动模式"
+                        android:textColor="@color/light_blue"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_temp_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="9℃"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:layout_below="@id/ll_temp" >
+
+                <!-- 档位图片 -->
+
+                <ImageSwitcher
+                    android:id="@+id/is_dw"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_centerInParent="true"
+                    android:background="#FFFFFF"
+                    android:src="@drawable/dw_one" />
+
+                <ImageView
+                    android:id="@+id/iv_dw_sub"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/is_dw"
+                    android:paddingEnd="9dp"
+                    android:src="@drawable/dw_sub"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_dw_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/is_dw"
+                    android:paddingLeft="9sp"
+                    android:src="@drawable/dw_add"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:paddingLeft="9dp"
+                android:text="重置"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:paddingRight="9dp"
+                android:text="保存"
+                android:textColor="@color/light_blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <!-- 拖动条栏 -->
+
+        <LinearLayout
+            android:id="@+id/ll_sb_temp"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_seekbar"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <SeekBar
+                android:id="@+id/sb_temp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:progressDrawable="@drawable/progress_holo_light"
+                android:thumb="@drawable/detail_icon_schedule_ball1" />
+        </LinearLayout>
+        <!-- 档位调节的图标显示栏 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设备名称"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="开始时间"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="持续时间(分)"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 标题与滑块之间的分界图 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:background="@drawable/bg_divi" />
+
+        <!-- 整个风机设置界面 -->
+
+        <LinearLayout
+            android:id="@+id/LL_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+             <ListView
+                android:id="@+id/yxcsListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+<!--        <com.tjerkw.slideexpandable.library.ActionSlideExpandableListView
+        android:id="@+id/yxcsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

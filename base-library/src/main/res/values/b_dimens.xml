@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 边框 -->
+    <dimen name="b_body_padding">10dip</dimen>
+    <dimen name="b_header_height">44dip</dimen>
+    <!-- 按钮 -->
+    <dimen name="b_button_round_radius">3dp</dimen>
+
+</resources>

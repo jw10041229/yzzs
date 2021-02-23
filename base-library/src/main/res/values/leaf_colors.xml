@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 基本颜色 -->
+<!--   <color name="white">#ffffffff</color> &lt;!&ndash; 白 &ndash;&gt;
+    <color name="black">#ff000000</color> &lt;!&ndash; 黑 &ndash;&gt;-->
+    <color name="red">#ffff0000</color> <!-- 红 -->
+    <color name="darkred">#ff8b0000</color> <!-- 深红 -->
+    <color name="silver">#ffc0c0c0</color> <!-- 银 -->
+    <color name="pink">#ffffc0cb</color> <!-- 粉红 -->
+    <color name="deeppink">#ffff1493</color> <!-- 深粉红 -->
+    <color name="lightpink">#ffffb6c1</color> <!-- 淡粉红 -->
+    <color name="orange">#ffffa5cc</color> <!-- 橘黄 -->
+    <color name="darkorange">#ffff8c00</color> <!-- 深橘黄 -->
+    <color name="orangered">#ffff4500</color> <!-- 橘黄红 -->
+    <color name="gold">#ffffd700</color> <!-- 金 -->
+    <color name="snow">#fffffafa</color> <!-- 雪 -->
+    <color name="lightyellow">#ffffffe0</color> <!-- 淡黄 -->
+    <color name="yellow">#ffffff00</color> <!-- 黄 -->
+    <color name="greenyellow">#ffadff2f</color> <!-- 绿黄 -->
+    <color name="green">#ff008000</color> <!-- 绿 -->
+    <color name="lightgreen">#ff90ee90</color> <!-- 淡绿 -->
+    <color name="darkseagreen">#ff8fbc8f</color> <!-- 深绿 -->
+    <color name="blue">#ff0000ff</color> <!-- 蓝 -->
+    <color name="darkblue">#ff00008b</color> <!-- 深蓝 -->
+    <color name="lightblue">#ffadd8e6</color> <!-- 淡蓝 -->
+    <color name="lightblue2">#4B7DC3</color> <!-- 淡蓝 -->
+    <color name="lightskyblue">#ff87cefa</color> <!-- 淡天蓝 -->
+    <color name="gray">#ff808080</color> <!-- 灰 -->
+    <color name="darkgray">#ffa9a9a9</color> <!-- 深灰 -->
+    <color name="lightgray">#ffd3d3d3</color> <!-- 淡灰 -->
+     <color name="easygray">#fafdff</color> <!-- 淡灰 -->
+    <color name="transparent">#00000000</color> <!-- 透明 -->
+
+
+    <!-- 圆角边框的颜色 -->
+    <color name="leaf_round_container_border">#ffb7babb</color>
+
+    <!-- 圆角没选中背景颜色 -->
+    <color name="leaf_round_start_color">#FFFFFF</color>
+    <color name="leaf_round_end_color">#FFFFFF</color>
+
+    <!-- 圆角选中背景颜色 -->
+    <color name="leaf_round_start_color_pressed">#ff3590c4</color>
+    <color name="leaf_round_end_color_pressed">#ff2570ba</color>
+
+</resources>

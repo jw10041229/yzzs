@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light2" >
+
+    <!-- 顶部标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_main_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_titlebar_blue" >
+
+        <ImageView
+            android:id="@+id/iv_retore"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:visibility="visible"
+            android:src="@drawable/icon_retore" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="环境控制"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/setBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:background="@null"
+            android:text="档位信息"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/rl_main_titlebar"
+        android:background="@color/gray_light2" >
+
+        <LinearLayout
+            android:id="@+id/cgqBtnLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <HorizontalScrollView
+        android:id="@+id/hs_bottom_tab"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light2" >
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <!-- 底部引导栏 -->
+    
+    <!-- 设备状态 -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp" >
+    </FrameLayout>
+
+    <!-- 界面内容：填充温度曲线图 -->
+
+    <RelativeLayout
+        android:id="@+id/chartRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_sbzt"
+        android:layout_below="@+id/hs_btn"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+    <!-- 帧布局，悬浮在titlebar下面 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_main_titlebar"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/blueToothStateRL"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_bluetooth_state"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_bluetooth_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="蓝牙状态："
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_bluetooth_info"
+                android:text="关闭"
+                android:textColor="#FF2385E2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/bluetoothSearchIv"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_search_normal" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sbzt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_above="@+id/hs_bottom_tab"
+        android:layout_margin="5dp"
+        android:background="@drawable/light_blue_bg" >
+
+        <ScrollView
+            android:id="@+id/yxzt_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dip" >
+
+                <TextView
+                    android:id="@+id/hkgzTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="当前无故障"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_refresh_fault"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/rl_sbzt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_refresh_white" />
+
+</RelativeLayout>

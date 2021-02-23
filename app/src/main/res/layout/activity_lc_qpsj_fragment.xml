@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_titlebar_blue"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/icon_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="1号料槽"
+            android:textColor="@color/white"
+            android:drawableEnd="@drawable/lc_inverted_triangle"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!-- 底部 bottombar -->
+
+    <RelativeLayout
+        android:id="@+id/rl_set_spsj1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_slb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="时间1:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_start_time_value1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_set_slb1"
+            android:gravity="center"
+            android:textColor="@color/light_blue"
+            android:text=""
+            android:textSize="20sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_set_continue_time_value1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tv_set_start_time_value1"
+            android:gravity="center"
+            android:hint="请输入持续时间"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_spsj2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_set_spsj1"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_slb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="时间2:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_start_time_value2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_set_slb2"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_set_continue_time_value2"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/tv_set_start_time_value2"
+            android:gravity="center"
+            android:hint="请输入持续时间"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_spsj3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_set_spsj2"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_slb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="时间3:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_start_time_value3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_set_slb3"
+            android:gravity="center"
+            android:textColor="@color/light_blue"
+            android:text=""
+            android:textSize="20sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_set_continue_time_value3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/tv_set_start_time_value3"
+            android:gravity="center"
+            android:hint="请输入持续时间"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_spsj4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_set_spsj3"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_set_slb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="10dp"
+            android:text="时间4:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_set_start_time_value4"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/tv_set_slb4"
+            android:gravity="center"
+            android:textColor="@color/light_blue"
+            android:text=""
+            android:textSize="20sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_set_continue_time_value4"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toRightOf="@+id/tv_set_start_time_value4"
+            android:gravity="center"
+            android:hint="请输入持续时间"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/light_blue"
+            android:textSize="20sp" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_set_spsj5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_set_spsj4"
+        android:layout_margin="10dp"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/ctv_qpsj_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:filterTouchesWhenObscured="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="是否批处理"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_set_spsj5"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_save_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_blue_bg"
+            android:text="保存"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_read_time"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/light_blue_bg"
+            android:text="读取设备时间"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
